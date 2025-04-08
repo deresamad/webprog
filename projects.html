@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Dere Samad</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .project-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .project-box {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none; 
+            color: inherit; 
+            display: block; 
+        }
+
+        .project-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-box img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16/9; 
+            object-fit: cover; 
+            border-bottom: 2px solid #ddd;
+        }
+
+        .project-info {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .project-info h3 {
+            color: #333;
+            font-size: 1.4em;
+            margin-bottom: 10px;
+        }
+
+        .project-info p {
+            color: #666;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dere Samad - Data Analyst</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="projects">
+        <h2>My Projects</h2>
+        <div class="project-container">
+            <div class="project-colour">
+                <a href="project1.html" class="project-box">
+                    <img src="images/PALMORIA_DASHBOARD.png" alt="Project 1">
+                    <div class="project-info">
+                        <h3>Project One</h3>
+                        <p>Data visualization dashboard using Power BI.</p>
+                    </div>
+                </a>
+
+            </div>
+            
+            <a href="project2.html" class="project-box">
+                <img src="images/project2.jpg" alt="Project 2">
+                <div class="project-info">
+                    <h3>Project Two</h3>
+                    <p>SQL database optimization for an enterprise system.</p>
+                </div>
+            </a>
+            <a href="project3.html" class="project-box">
+                <img src="images/project3.jpg" alt="Project 3">
+                <div class="project-info">
+                    <h3>Project Three</h3>
+                    <p>Automated data cleaning tool using Python.</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Dere Samad | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
+
